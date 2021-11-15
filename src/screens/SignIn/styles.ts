@@ -8,8 +8,6 @@ export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-
-  background: ${theme.colors.background};
 `;
 
 export const Img = styled.Image.attrs({ source: Illustration })`
@@ -25,16 +23,20 @@ export const Content = styled.View`
 
 export const Title = styled.Text`
   margin-bottom: 16px;
+  line-height: 40px;
 
   text-align: center;
+  font-family: ${theme.fonts.title700};
   font-size: 40px;
   color: ${theme.colors.heading};
 `;
 
 export const SubTitle = styled.Text`
+  line-height: 25px;
   margin-bottom: 64px;
 
   text-align: center;
+  font-family: ${theme.fonts.title500};
   font-size: 16px;
   color: ${theme.colors.heading};
 `;
